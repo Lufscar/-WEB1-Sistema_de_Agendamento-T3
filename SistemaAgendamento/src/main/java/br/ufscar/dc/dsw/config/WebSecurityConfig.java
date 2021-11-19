@@ -47,6 +47,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.antMatchers("/consultas/**").hasRole("CLIENTE")
 				.antMatchers("/profissionais/**", "/clientes/**").hasRole("ADMIN")
                 .antMatchers("/admins/**").hasRole("ADMIN")
+		// Controladores REST
+		.antMatchers("/clientes", "/profissionais", "/consultas").permitAll()
+		.antMatchers("/clientes/{\\d+}", "/profissionais/{\\d+}").permitAll()
+		.antMatchers("/consultas/{\\d+}").permitAll()
+		.antMatchers("/profissionais/especialidades/{\\w+}").permitAll()
+		.antMatchers("/consultas/clientes/{\\d+}").permitAll()
+		.antMatchers("/consultas/profissionais/{\\d+}").permitAll()
+		// Demais linhas
 				.anyRequest().authenticated()
 			.and()
 				.formLogin()
