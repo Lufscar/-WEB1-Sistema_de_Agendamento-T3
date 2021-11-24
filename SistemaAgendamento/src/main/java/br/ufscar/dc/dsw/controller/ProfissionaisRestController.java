@@ -22,6 +22,7 @@ import br.ufscar.dc.dsw.domain.Profissionais;
 import br.ufscar.dc.dsw.domain.Consultas;
 import br.ufscar.dc.dsw.service.spec.IProfissionaisService;
 
+@RestController
 public class ProfissionaisRestController {
 
 	@Autowired

@@ -21,6 +21,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import br.ufscar.dc.dsw.domain.*;
 import br.ufscar.dc.dsw.service.spec.IConsultasService;
 
+@RestController
 public class ConsultasRestController {
 
 	@Autowired

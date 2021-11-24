@@ -22,6 +22,7 @@ import br.ufscar.dc.dsw.domain.Clientes;
 import br.ufscar.dc.dsw.domain.Consultas;
 import br.ufscar.dc.dsw.service.spec.IClientesService;
 
+@RestController
 public class ClientesRestController {
 
 	@Autowired
