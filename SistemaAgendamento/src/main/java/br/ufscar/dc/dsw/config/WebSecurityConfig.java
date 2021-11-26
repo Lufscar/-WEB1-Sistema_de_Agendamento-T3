@@ -40,7 +40,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-				http.authorizeRequests()
+		http.csrf().disable().authorizeRequests()
 				.antMatchers("/error", "/login/**", "/js/**", "/homecontroller/**", "/home/**", "/", "/consultas/listar").permitAll()
                 .antMatchers("/css/**", "/image/**", "/webjars/**").permitAll()
                 //.antMatchers("/consultas/listar").hasRole(["PROFISSIONAL", "CLIENTE", "ADMIN"])
@@ -57,12 +57,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		// Demais linhas
 				.anyRequest().authenticated()
 			.and()
-				.formLogin()
-				.loginPage("/login")
-				.permitAll()
+				.formLogin().loginPage("/login").permitAll()
 			.and()
-				.logout()
-				.logoutSuccessUrl("/")
-				.permitAll();
+				.logout().logoutSuccessUrl("/").permitAll();
 	}
 }
