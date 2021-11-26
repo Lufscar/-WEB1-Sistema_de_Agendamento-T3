@@ -7,6 +7,7 @@ import org.springframework.security.config.annotation.web.builders.*;
 import org.springframework.security.config.annotation.web.configuration.*;
 import org.springframework.security.core.userdetails.*;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.context.annotation.Configuration;
 
 import br.ufscar.dc.dsw.security.PessoaDetailsServiceImpl;
 
@@ -41,12 +42,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable().authorizeRequests()
-				.antMatchers("/error", "/login/**", "/js/**", "/homecontroller/**", "/home/**", "/", "/consultas/listar").permitAll()
-                .antMatchers("/css/**", "/image/**", "/webjars/**").permitAll()
-                //.antMatchers("/consultas/listar").hasRole(["PROFISSIONAL", "CLIENTE", "ADMIN"])
-				.antMatchers("/consultas/**").hasRole("CLIENTE")
-				.antMatchers("/profissionais/**", "/clientes/**").hasRole("ADMIN")
-                .antMatchers("/admins/**").hasRole("ADMIN")
+
 		// Controladores REST
 		.antMatchers("/clientes", "/profissionais", "/consultas").permitAll()
 		.antMatchers("/clientes/{\\d+}", "/profissionais/{\\d+}").permitAll()
@@ -54,11 +50,22 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		.antMatchers("/profissionais/especialidades/{\\w+}").permitAll()
 		.antMatchers("/consultas/clientes/{\\d+}").permitAll()
 		.antMatchers("/consultas/profissionais/{\\d+}").permitAll()
+				
 		// Demais linhas
-				.anyRequest().authenticated()
-			.and()
-				.formLogin().loginPage("/login").permitAll()
-			.and()
-				.logout().logoutSuccessUrl("/").permitAll();
+		.antMatchers("/error", "/login/**", "/js/**", "/homecontroller/**", "/home/**", "/", "/consultas/listar").permitAll()
+        .antMatchers("/css/**", "/image/**", "/webjars/**").permitAll()
+        //.antMatchers("/consultas/listar").hasRole(["PROFISSIONAL", "CLIENTE", "ADMIN"])
+		.antMatchers("/consultas/**").hasRole("CLIENTE")
+		.antMatchers("/profissionais/**", "/clientes/**").hasRole("ADMIN")
+        .antMatchers("/admins/**").hasRole("ADMIN")
+			.anyRequest().authenticated()
+		.and()
+			.formLogin()
+			.loginPage("/login")
+			.permitAll()
+		.and()
+			.logout()
+			.logoutSuccessUrl("/")
+			.permitAll();
 	}
 }
