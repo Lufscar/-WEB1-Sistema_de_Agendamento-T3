@@ -138,13 +138,13 @@ Divisão na implementação da funcionalidade: igualmente dividido
 - REST API -- Retorna a lista das consultas do cliente de id = {id} [Read - CRUD]
 GET http://localhost:8080/consultas/clientes/{id}
 
-(X) Implementado ( ) Parcialmente implementado ( ) Não implementado
+( ) Implementado ( ) Parcialmente implementado (X) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
 - REST API -- Retorna a lista das consultas do profissional de id = {id} [Read - CRUD]
 GET http://localhost:8080/consultas/profissionais/{id}
 
-(X) Implementado ( ) Parcialmente implementado ( ) Não implementado
+( ) Implementado ( ) Parcialmente implementado (X) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
  
 
