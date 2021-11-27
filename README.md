@@ -49,14 +49,14 @@ create database SistemaAgendamento;
  
  ### Requisitos
 
--Cria um novo cliente [Create - CRUD]
+- Cria um novo cliente [Create - CRUD]
 POST http://localhost:8080/clientes
 Body: raw/JSON (application/json)
 
 ( ) Implementado (X) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
--Retorna a lista de clientes [Read - CRUD]
+- Retorna a lista de clientes [Read - CRUD]
 GET http://localhost:8080/clientes
 
 (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
