@@ -33,11 +33,14 @@ create database SistemaAgendamento;
  mvn spring-boot:run
  ```
  
- 4- Acesse http://localhost:8080
+ ### Funcionalidades REST API
  
- ### Funcionalidades
+ 1- Recomendamos utilizar o Postman (https://www.postman.com/) para testar as funcionalidades.
+ Confira os testes realizados com sucesso presentes na pasta de imagens testes presente neste repositório.
  
- Para testar as funcionalidades do sistema:
+ ### Funcionalidades diretamente do site
+ 
+ Para testar as funcionalidades do sistema diretamente no site, acesse em seu navegador: http://localhost:8080/
  
  1- Na tela inicial já é exibida uma tabela com todos profissionais cadastrados, logo abaixo, há um campo que possibilita filtrar os funcionários pela área de atuação. No canto superior direito há os botões de escolha de idioma português-brasileiro e inglês.
  
