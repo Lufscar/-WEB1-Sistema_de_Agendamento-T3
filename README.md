@@ -3,6 +3,7 @@
  * [Configurações](#Configurações)
  * [Funcionalidades](#Funcionalidades)
  * [Requisitos](#Requisitos)
+ * [Roteiro de Execução] (#Roteiro de Execução)
  
 ### About
  
@@ -150,3 +151,51 @@ Divisão na implementação da funcionalidade: igualmente dividido
  
 
 - Observação: Todos os requisitos foram igualmente divididos pois a maior parte do trabalho foi feita enquanto estávamos reunidos, outras poucas partes feitas individualmente foram divididas de maneira equilibrada.
+
+## Roteiro de Execução
+
+Nem todas as funcionalidades foram implementadas com sucesso, então este roteiro abrange apenas a que obtiveram sucesso!
+Todos os testes devem ser feitos no POSTMAN, após a execução do projeto via terminal.
+
+###Lista de Clientes e Profissionais Para Execução dos Testes
+![](https://github.com/Lufscar/WEB1-Sistema_de_Agendamento-T3/blob/main/TESTES/LISTA%20DE%20CLIENTES%20E%20PROFISSIONAIS%20CADASTRADOS%20AUTOMATICAMENTE%20(senha%20padr%C3%A3o%20-%201234).png)
+
+###Lista de Consultas Para Execução dos Testes
+![](https://github.com/Lufscar/WEB1-Sistema_de_Agendamento-T3/blob/main/TESTES/LISTA%20DE%20CONSULTAS%20CADASTRADAS%20AUTOMATICAMENTE.png)
+
+###Teste A
+GET http://localhost:8080/clientes
+![](https://github.com/Lufscar/WEB1-Sistema_de_Agendamento-T3/blob/main/TESTES/TESTE%20A%20-%20GET%20CLIENTES.png)
+
+###Teste B
+GET http://localhost:8080/clientes/2
+- IDs dos clientes vão de 2 à 5
+![](https://github.com/Lufscar/WEB1-Sistema_de_Agendamento-T3/blob/main/TESTES/TESTE%20B%20-%20GET%20CLIENTES%20-%20ID%202.png)
+
+###Teste C
+GET http://localhost:8080/profissionais
+![](https://github.com/Lufscar/WEB1-Sistema_de_Agendamento-T3/blob/main/TESTES/TESTE%20C%20-%20GET%20PROFISSIONAIS.png)
+
+###Teste D
+GET http://localhost:8080/profissionais/7
+- IDs dos profissionais vão de 6 à 9
+![](https://github.com/Lufscar/WEB1-Sistema_de_Agendamento-T3/blob/main/TESTES/TESTE%20D%20-%20GET%20PROFISSIONAIS%20-%20ID%207.png)
+
+###Teste E
+GET http://localhost:8080/consultas
+![](https://github.com/Lufscar/WEB1-Sistema_de_Agendamento-T3/blob/main/TESTES/TESTE%20E%20-%20GET%20COLSULTAS.png)
+
+###Teste F
+GET http://localhost:8080/consultas/1
+- IDs das consultas vão de 1 à 3
+![](https://github.com/Lufscar/WEB1-Sistema_de_Agendamento-T3/blob/main/TESTES/TESTE%20F%20-%20GET%20CONSULTAS%20-%20ID%201.png)
+
+###Teste G
+DELETE http://localhost:8080/consultas/1
+- Funcionalidade Extra
+![](https://github.com/Lufscar/WEB1-Sistema_de_Agendamento-T3/blob/main/TESTES/TESTE%20G%20-%20DELETE%20CONSULTAS%20-%20ID%201.png)
+
+###Teste H
+GET http://localhost:8080/consultas/1
+- Teste que comprova o delete
+![](https://github.com/Lufscar/WEB1-Sistema_de_Agendamento-T3/blob/main/TESTES/TESTE%20H%20-%20GET%20CONSULTAS%20-%20ID%201%20AP%C3%93S%20DELETE.png)
