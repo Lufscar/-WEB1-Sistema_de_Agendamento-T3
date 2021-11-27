@@ -37,6 +37,7 @@ create database SistemaAgendamento;
  
  1- Recomendamos utilizar o Postman (https://www.postman.com/) para testar as funcionalidades.
  Confira os testes realizados com sucesso presentes na pasta de imagens "TESTES" presente neste repositório.
+
  
  ### Funcionalidades diretamente do site
  
@@ -107,7 +108,7 @@ Divisão na implementação da funcionalidade: igualmente dividido
 - Retorna a lista de todos os profissionais de especialidade cujo nome = {nome}
 GET http://localhost:8080/profissionais/especialidades/{nome}
 
-(X) Implementado ( ) Parcialmente implementado ( ) Não implementado
+( ) Implementado ( ) Parcialmente implementado (X) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
 - Atualiza o profissional de id = {id} [Update - CRUD]
