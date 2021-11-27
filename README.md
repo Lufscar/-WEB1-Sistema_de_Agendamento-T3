@@ -62,74 +62,85 @@ GET http://localhost:8080/clientes
 (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
--Retorna o cliente de id = {id} [Read - CRUD]
+- Retorna o cliente de id = {id} [Read - CRUD]
 GET http://localhost:8080/clientes/{id}
 
 (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
--Atualiza o cliente de id = {id} [Update - CRUD]
+- Atualiza o cliente de id = {id} [Update - CRUD]
 PUT http://localhost:8080/clientes/{id}
 Body: raw/JSON (application/json)
 
 ( ) Implementado (X) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-Remove o cliente de id = {id} [Delete - CRUD]
+- Remove o cliente de id = {id} [Delete - CRUD]
 DELETE http://localhost:8080/clientes/{id}
 REST API -- CRUD de profissionais
+
 ( ) Implementado (X) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-Cria um novo profissional [Create - CRUD]
+- Cria um novo profissional [Create - CRUD]
 POST http://localhost:8080/profissionais
 Body: raw/JSON (application/json)
+
 ( ) Implementado (X) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-Retorna a lista de profissionais [Read - CRUD]
+- Retorna a lista de profissionais [Read - CRUD]
 GET http://localhost:8080/profissionais
+
 (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-Retorna o profissional de id = {id} [Read - CRUD]
+- Retorna o profissional de id = {id} [Read - CRUD]
 GET http://localhost:8080/profissionais/{id}
+
 (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-Retorna a lista de todos os profissionais de especialidade cujo nome = {nome}
+- Retorna a lista de todos os profissionais de especialidade cujo nome = {nome}
 GET http://localhost:8080/profissionais/especialidades/{nome}
+
 (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-Atualiza o profissional de id = {id} [Update - CRUD]
+- Atualiza o profissional de id = {id} [Update - CRUD]
 PUT http://localhost:8080/profissionais/{id}
 Body: raw/JSON (application/json)
+
 ( ) Implementado (X) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-Remove o profissional de id = {id} [Delete - CRUD]
+- Remove o profissional de id = {id} [Delete - CRUD]
 DELETE http://localhost:8080/profissionais/{id}
+
 ( ) Implementado (X) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-REST API -- Retorna a lista de consultas [Read - CRUD]
+- REST API -- Retorna a lista de consultas [Read - CRUD]
 GET http://localhost:8080/consultas
+
 (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-REST API -- Retorna a consulta de id = {id} [Read - CRUD]
+- REST API -- Retorna a consulta de id = {id} [Read - CRUD]
 GET http://localhost:8080/consultas/{id}
+
 (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-REST API -- Retorna a lista das consultas do cliente de id = {id} [Read - CRUD]
+- REST API -- Retorna a lista das consultas do cliente de id = {id} [Read - CRUD]
 GET http://localhost:8080/consultas/clientes/{id}
+
 (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-REST API -- Retorna a lista das consultas do profissional de id = {id} [Read - CRUD]
+- REST API -- Retorna a lista das consultas do profissional de id = {id} [Read - CRUD]
 GET http://localhost:8080/consultas/profissionais/{id}
+
 (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
  
