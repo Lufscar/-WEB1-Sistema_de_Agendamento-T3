@@ -6,7 +6,7 @@
  
 ### About
  
-Projeto 2 de Web, disciplina ministrada pelo professor Delano.
+Projeto 3 de Web, disciplina ministrada pelo professor Delano.
 
 Implementação por:
   - Anderson Henrique Giacomini, 769720
