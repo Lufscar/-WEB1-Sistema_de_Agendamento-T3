@@ -36,7 +36,7 @@ create database SistemaAgendamento;
  ### Funcionalidades REST API
  
  1- Recomendamos utilizar o Postman (https://www.postman.com/) para testar as funcionalidades.
- Confira os testes realizados com sucesso presentes na pasta de imagens testes presente neste repositório.
+ Confira os testes realizados com sucesso presentes na pasta de imagens "TESTES" presente neste repositório.
  
  ### Funcionalidades diretamente do site
  
