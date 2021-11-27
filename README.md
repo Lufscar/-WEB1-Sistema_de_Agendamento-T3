@@ -48,49 +48,87 @@ create database SistemaAgendamento;
  4- Na tela de cliente é possivel agendar uma consulta e visualizar uma lista das consultas marcadas. Na tela de profissional é possivel apenas visualizar uma lista das consultas marcadas.
  
  ### Requisitos
- - Cadastro de Clientes:  (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
+
+Cria um novo cliente [Create - CRUD]
+POST http://localhost:8080/clientes
+Body: raw/JSON (application/json)
+( ) Implementado (X) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
- - Cadastro de Profissionais:  ( ) Implementado (X) Parcialmente implementado ( ) Não implementado
+Retorna a lista de clientes [Read - CRUD]
+GET http://localhost:8080/clientes
+(X) Implementado ( ) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-Faltou apenas a submissão do currículo
+Retorna o cliente de id = {id} [Read - CRUD]
+GET http://localhost:8080/clientes/{id}
 
--  Cadastro de Consultas: (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
+(X) Implementado ( ) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
- - R1: (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
+Atualiza o cliente de id = {id} [Update - CRUD]
+PUT http://localhost:8080/clientes/{id}
+Body: raw/JSON (application/json)
+( ) Implementado (X) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-- R2: (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
+Remove o cliente de id = {id} [Delete - CRUD]
+DELETE http://localhost:8080/clientes/{id}
+REST API -- CRUD de profissionais
+( ) Implementado (X) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-- R3: ( ) Implementado (X) Parcialmente implementado ( ) Não implementado
+Cria um novo profissional [Create - CRUD]
+POST http://localhost:8080/profissionais
+Body: raw/JSON (application/json)
+( ) Implementado (X) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-Faltou apenas o filtro por especialidade
-
-- R4: ( ) Implementado (X) Parcialmente implementado ( ) Não implementado
+Retorna a lista de profissionais [Read - CRUD]
+GET http://localhost:8080/profissionais
+(X) Implementado ( ) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-Faltou apenas personilizar o envio de emails para o profissional e cliente específicos - estão sendo enviados para um email criado para testes da disciplina: trab.web.ufscar@gmail.com
-
-- R5: (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
+Retorna o profissional de id = {id} [Read - CRUD]
+GET http://localhost:8080/profissionais/{id}
+(X) Implementado ( ) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-- R6: (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
+Retorna a lista de todos os profissionais de especialidade cujo nome = {nome}
+GET http://localhost:8080/profissionais/especialidades/{nome}
+(X) Implementado ( ) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-- R7: (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
+Atualiza o profissional de id = {id} [Update - CRUD]
+PUT http://localhost:8080/profissionais/{id}
+Body: raw/JSON (application/json)
+( ) Implementado (X) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-- R8: (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
+Remove o profissional de id = {id} [Delete - CRUD]
+DELETE http://localhost:8080/profissionais/{id}
+( ) Implementado (X) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-- R9: (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
+REST API -- Retorna a lista de consultas [Read - CRUD]
+GET http://localhost:8080/consultas
+(X) Implementado ( ) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
 
-- Página de erros amigável: (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
+REST API -- Retorna a consulta de id = {id} [Read - CRUD]
+GET http://localhost:8080/consultas/{id}
+(X) Implementado ( ) Parcialmente implementado ( ) Não implementado
 Divisão na implementação da funcionalidade: igualmente dividido
+
+REST API -- Retorna a lista das consultas do cliente de id = {id} [Read - CRUD]
+GET http://localhost:8080/consultas/clientes/{id}
+(X) Implementado ( ) Parcialmente implementado ( ) Não implementado
+Divisão na implementação da funcionalidade: igualmente dividido
+
+REST API -- Retorna a lista das consultas do profissional de id = {id} [Read - CRUD]
+GET http://localhost:8080/consultas/profissionais/{id}
+(X) Implementado ( ) Parcialmente implementado ( ) Não implementado
+Divisão na implementação da funcionalidade: igualmente dividido
+ 
 
 - Observação: Todos os requisitos foram igualmente divididos pois a maior parte do trabalho foi feita enquanto estávamos reunidos, outras poucas partes feitas individualmente foram divididas de maneira equilibrada.
